@@ -1,0 +1,12 @@
+{
+  "name": "tnc",
+  "version": "1.0.0",
+  "description": "the project for TNC march tcs edureka",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "indiagator",
+  "license": "ISC",
+  "type": "module"
+}

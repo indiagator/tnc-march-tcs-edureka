@@ -10,5 +10,6 @@ export class News
         this.headline = headline;
         this.text = text;
         this.date = new Date();
+
     }    
 }

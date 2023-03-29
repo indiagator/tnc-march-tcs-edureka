@@ -1,6 +1,10 @@
 
 
-export function loadNews(newsList,newsBody)
+export function loadNews(newsBody)
 {
-    newsList = JSON.parse(newsBody);
+    let newsList = new Array();
+
+    newsList.push(JSON.parse(newsBody));
+    
+    return newsList;
 }

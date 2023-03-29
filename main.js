@@ -19,10 +19,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const __credentials = "credentials.txt";
 const __news = "news.txt";
-let newsList = new Array();
 const credentials = fs.readFileSync(path.join(__dirname,__credentials),'utf-8');
-const newsListFromFile = fs.readFileSync(path.join(__dirname,__news),'utf-8');
-loadNews(newsList,newsListFromFile);
+let newsListFromFile = fs.readFileSync(path.join(__dirname,__news),'utf-8');
+let newsList = loadNews(newsListFromFile);
 
 const __userdetails = null;
 
@@ -53,7 +52,7 @@ if(usernameExists(username,credentials))
 
         if(usertype === 'journalist')
         {
-            displayJournalistDashboard(username,newsList);
+            displayJournalistDashboard(username,newsList,__dirname,__news);
         }
         
     }

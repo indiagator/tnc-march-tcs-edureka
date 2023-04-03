@@ -23,7 +23,7 @@ export async function displayJournalistDashboard(journalistname,newsList,__dirna
     let newsJson = JSON.stringify(news);
     console.log(newsJson);
 
-    newsList.push(newsJson);
+    newsList.push(newsJson); // [{news obj 1}, {news obj 2}, {news obj 3}...]
 
     console.log(JSON.stringify(newsList));
 
